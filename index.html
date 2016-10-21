@@ -45,9 +45,16 @@
     
     <body>
         
-<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/silvani1.1lc4mn81/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1Ijoic2lsdmFuaTEiLCJhIjoiY2loODFpcG42MHJqaXVla3R1MTBwcjF4eiJ9.rJjz9w3h6d2oaFbVmduZNw'>
-        </iframe>
-        
+<!--<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/silvani1.1lc4mn81/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1Ijoic2lsdmFuaTEiLCJhIjoiY2loODFpcG42MHJqaXVla3R1MTBwcjF4eiJ9.rJjz9w3h6d2oaFbVmduZNw'>
+        </iframe> -->
+        <div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2lsdmFuaTEiLCJhIjoiY2loODFpcG42MHJqaXVla3R1MTBwcjF4eiJ9.rJjz9w3h6d2oaFbVmduZNw';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9'
+});
+</script>
     </body>
 
     <!-- Footer -->
